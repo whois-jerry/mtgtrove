@@ -1,4 +1,3 @@
-# MTGtrove
 ## Magic: The Gathering Card Search Tool
 
 ### What to expect:
