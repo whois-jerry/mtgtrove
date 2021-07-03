@@ -5,7 +5,6 @@ RUN apk update
 RUN apk add python2
 COPY index.html /tmp/index.html
 COPY script.js /tmp/script.js
-COPY favicon.ico /tmp/favicon.ico
 COPY assets /tmp/assets
 COPY start.sh /tmp/start.sh
 USER 1000
