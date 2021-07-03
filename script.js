@@ -46,5 +46,5 @@ query.addEventListener("keypress", function (event) {
 
 
 
-// For future update: Return MTG symbols (Mana Colors | Colorless | Tap)
+// For future update: Return MTG symbols (Mana Colors | Colorless | Tap | Untap)
 // https://scryfall.com/docs/api/card-symbols
