@@ -33,11 +33,12 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Build and push Docker images
+      # tags: user/app:latest
       - name: Build and push Docker images
         uses: docker/build-push-action@v2.6.1
         with:
           push: true
-          tags: user/app:latest
+          tags: whoisjerry/public-repo:tagname
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
