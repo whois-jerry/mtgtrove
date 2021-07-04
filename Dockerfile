@@ -2,7 +2,7 @@ FROM alpine
 LABEL maintainer="jerry-yip@outlook.com"
 EXPOSE 8080
 RUN apk update
-RUN apk add python3
+RUN apk add python2
 COPY index.html /tmp/index.html
 COPY script.js /tmp/script.js
 COPY /assets /tmp/assets
