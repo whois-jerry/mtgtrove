@@ -18,3 +18,16 @@ Run with:
 ```
 docker run -d -p 8080:8080 whoisjerry/public-repo
 ```
+Stop with:
+```
+docker stop $(docker ps -q)
+docker kill $(docker ps -q)
+```
+Remove all containers:
+```
+docker rm $(docker ps -a -q)
+```
+Remove all images:
+```
+docker rmi $(docker images -q)
+```
