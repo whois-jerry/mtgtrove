@@ -38,3 +38,11 @@ docker rmi $(docker images -q)
 CI/CD pipeline built using GitHub actions
 * Build Docker image
 * Push to DockerHub
+
+![image](https://user-images.githubusercontent.com/82949691/124372089-abd7b380-dcba-11eb-9cf0-7243154f725d.png)
+
+Notifications
+* Twilio SMS notification on pull request
+
+![image](https://user-images.githubusercontent.com/82949691/124372046-5dc2b000-dcba-11eb-83d6-009dce773ad3.png)
+
