@@ -20,14 +20,19 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
     # Twilio SMS GitHub Action
-    - name: 'Send SMS Notification'
-      uses: twilio-labs/actions-sms@v1
-      with:
-        fromPhoneNumber: '+1(786)5656563'
-        toPhoneNumber: '+6586788333'
-        message: 'Pull request received on MTGtrove'
-      env:
-        TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-        TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
-        TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
+      - name: 'Send SMS Notification'
+        uses: twilio-labs/actions-sms@v1
+        with:
+          fromPhoneNumber: '+1(786)5656563'
+          toPhoneNumber: '+6586788333'
+          message: 'Pull request received on MTGtrove'
+        env:
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
+          TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
