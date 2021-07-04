@@ -1,5 +1,5 @@
-# Magic: The Gathering Card Search Tool
-MTGtrove is a simple website that allows users to fuzzy search cards utilizing the Scryfall API.
+# MTGtrove
+MTGtrove is a simple website that allows users to fuzzy search Magic: The Gathering cards utilizing the Scryfall API.
 
 ### What to expect:
 * Card search functionality
@@ -7,10 +7,11 @@ MTGtrove is a simple website that allows users to fuzzy search cards utilizing t
 
 ### What to look forward to:
 * Deck building features
+* Advanced search features
 
 ---
 
-## Docker Documentation
+## Getting Started
 Repository  [Docker Hub
 ](https://hub.docker.com/r/whoisjerry/public-repo)
 
@@ -21,7 +22,6 @@ docker run -d -p 8080:8080 whoisjerry/public-repo
 Stop with:
 ```
 docker stop $(docker ps -q)
-docker kill $(docker ps -q)
 ```
 Remove all containers:
 ```
@@ -31,3 +31,10 @@ Remove all images:
 ```
 docker rmi $(docker images -q)
 ```
+
+---
+
+## Workflow Automations
+CI/CD pipeline built using GitHub actions
+* Build Docker image
+* Push to DockerHub
