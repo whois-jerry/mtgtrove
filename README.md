@@ -1,5 +1,6 @@
 # MTGtrove
-MTGtrove is a simple website that allows users to fuzzy search Magic: The Gathering cards utilizing the Scryfall API.
+MTGtrove is a simple website that allows users to fuzzy search Magic: The Gathering cards utilizing the Scryfall API. 
+Hi Jerry
 
 ### What to expect:
 * Card search functionality
