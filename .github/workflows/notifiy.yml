@@ -5,7 +5,8 @@ name: Notifications
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
+  issues:
+    types: [opened]
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -29,7 +30,7 @@ jobs:
         with:
           fromPhoneNumber: '+1(786)5656563'
           toPhoneNumber: '+6586788333'
-          message: 'Pull request received on MTGtrove'
+          message: 'An issue was raised on MTGtrove'
         env:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
