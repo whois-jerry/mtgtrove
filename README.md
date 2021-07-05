@@ -35,13 +35,15 @@ docker rmi $(docker images -q)
 ---
 
 ## Workflow Automations
-CI/CD pipeline built using GitHub actions
+CI/CD pipeline built using GitHub actions on push and pull requests
 * Build Docker image
 * Push to DockerHub
 
 ![image](https://user-images.githubusercontent.com/82949691/124372089-abd7b380-dcba-11eb-9cf0-7243154f725d.png)
 
+
 Notifications
-* Twilio SMS notification on pull request
+* Twilio SMS notifications when an issue is opened
 
 ![image](https://user-images.githubusercontent.com/82949691/124372046-5dc2b000-dcba-11eb-83d6-009dce773ad3.png)
+ 
