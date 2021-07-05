@@ -45,5 +45,5 @@ CI/CD pipeline built using GitHub actions on push and pull requests
 Notifications
 * Twilio SMS notifications when an issue is opened
 
-![image](https://user-images.githubusercontent.com/82949691/124372046-5dc2b000-dcba-11eb-83d6-009dce773ad3.png)
+![image](https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png)
  
