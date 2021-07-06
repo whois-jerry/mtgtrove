@@ -46,4 +46,4 @@ docker rmi $(docker images -q)
 * Twilio SMS notification
 
 [comment]: <![image](https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png)>
- <img src="https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png" width="1000">
+<img src="https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png" width="1000">
