@@ -1,18 +1,26 @@
 # MTGtrove
 MTGtrove is a simple website that allows users to fuzzy search Magic: The Gathering cards utilizing the Scryfall API.
 
-### What to expect:
+**What to expect:**
 * Card search functionality
 * Card image preview
 
-### What to look forward to:
+**What to look forward to:**
 * Deck building features
 * Advanced search features
 
----
+&nbsp;
 
 ## Getting Started
-Repository  [Docker Hub
+
+[Google Cloud Deployment
+](https://mtgtrove-hpfrqmfm3q-as.a.run.app/)
+
+Simply navigate to: `https://mtgtrove-hpfrqmfm3q-as.a.run.app` to view the latest deployment.
+
+&nbsp;
+
+[Docker Hub Image
 ](https://hub.docker.com/r/whoisjerry/public-repo)
 
 Run with:
@@ -32,18 +40,18 @@ Remove all images:
 docker rmi $(docker images -q)
 ```
 
----
+&nbsp;
 
-## Workflow Automations - GitHub Actions
-**CI/CD pipeline**: On push and pull requests to main branch
+## Workflow Automations - GitHub Actions | Google Cloud
+
+**1. CI/CD pipeline**: On push and pull requests to main branch
 * Build Docker image
-* Push to DockerHub
+* Push to DockerHub & Google Container Registry 
+* Deploy on Google Cloud Run
 
-[comment]: <![image](https://user-images.githubusercontent.com/82949691/124372089-abd7b380-dcba-11eb-9cf0-7243154f725d.png)>
-<img src="https://user-images.githubusercontent.com/82949691/124372089-abd7b380-dcba-11eb-9cf0-7243154f725d.png" width="1000">
+![image](https://user-images.githubusercontent.com/82949691/124372089-abd7b380-dcba-11eb-9cf0-7243154f725d.png)
 
-**Notifications**: On new issue opened
+**2. Notifications**: On new issue opened
 * Twilio SMS notification
 
-[comment]: <![image](https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png)>
-<img src="https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png" width="1000">
+![image](https://user-images.githubusercontent.com/82949691/124466295-17a84200-ddc9-11eb-8624-5d8cde8f1489.png)
